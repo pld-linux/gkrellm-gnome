@@ -1,4 +1,5 @@
 Summary:	GKrellM plugin to use GNOME
+Summary(pl):	Plugin gkrellm do u¿ywania z GNOME
 Name:		gkrellm-gnome
 Version:	0.1
 Release:	2
@@ -21,12 +22,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A GKrellM plugin to add GNOME capabilities.
 
+%description -l pl
+Plugin GKrellM dodaj±cy mo¿liwo¶ci GNOME.
+
 %prep
 %setup -q -n %{name}
 %patch -p1
 
 %build
-%{__make} CFLAGS="%{?debug:-O -g}%{!?debug:$RPM_OPT_FLAGS}"
+%{__make} CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -36,10 +40,10 @@ install src/gkrellm-gnome.so $RPM_BUILD_ROOT%{_libdir}/gkrellm
 
 gzip -9nf Changelog README
 
+%clean
+rm -rf $RPM_BUILD_ROOT
+
 %files
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_libdir}/gkrellm/gkrellm-gnome.so
-
-%clean
-rm -rf $RPM_BUILD_ROOT
