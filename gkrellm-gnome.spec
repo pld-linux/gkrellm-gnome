@@ -8,6 +8,7 @@ Group:		X11/Applications
 Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
 Source0:	http://web.wt.net/~billw/gkrellm/Plugins/%{name}.tar.gz
+Patch0:		%{name}-CFLAGS.patch
 URL:		http://gkrellm.net/
 BuildRequires:	gkrellm-devel
 BuildRequires:	gnome-libs-devel
@@ -22,9 +23,10 @@ A GKrellM plugin to add GNOME capabilities.
 
 %prep
 %setup -q -n %{name}
+%patch -p1
 
 %build
-%{__make}
+%{__make} CFLAGS="%{?debug:-O -g}%{!?debug:$RPM_OPT_FLAGS}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
