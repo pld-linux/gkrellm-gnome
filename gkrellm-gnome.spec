@@ -6,11 +6,6 @@ Release:	2
 License:	GPL
 Vendor:		Bill Wilson <bill@gkrellm.net>
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(es):	X11/Aplicaciones
-Group(pl):	X11/Aplikacje
-Group(pt_BR):	X11/Aplicações
-Group(pt):	X11/Aplicações
 Source0:	http://web.wt.net/~billw/gkrellm/Plugins/%{name}.tar.gz
 Patch0:		%{name}-CFLAGS.patch
 URL:		http://gkrellm.net/
