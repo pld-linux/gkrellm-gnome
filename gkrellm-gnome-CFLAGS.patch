@@ -1,0 +1,13 @@
+diff -Nru gkrellm-gnome/src/Makefile gkrellm-gnome.new/src/Makefile
+--- gkrellm-gnome/src/Makefile	Sun Jan 14 23:03:48 2001
++++ gkrellm-gnome.new/src/Makefile	Thu Feb  1 21:20:19 2001
+@@ -7,7 +7,8 @@
+ GTK_INCLUDE = `gtk-config --cflags`
+ GTK_LIB = `gtk-config --libs`
+ 
+-FLAGS = -O2 -Wall -fPIC $(GNOME_INCLUDE) $(GTK_INCLUDE)
++CFLAGS= -O2 -Wall
++FLAGS = $(CFLAGS) -fPIC $(GNOME_INCLUDE) $(GTK_INCLUDE)
+ LIBS = $(GNOME_LIB) $(GTK_LIB)
+ LFLAGS = -shared
+ 
