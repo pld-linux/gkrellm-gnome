@@ -14,8 +14,6 @@ BuildRequires:	gnome-libs-devel
 Requires:	gkrellm >= 1.0.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 A GKrellM plugin to add GNOME capabilities.
