@@ -1,7 +1,7 @@
 Summary:	GKrellM plugin to use GNOME
 Name:		gkrellm-gnome
 Version:	0.1
-Release:	1
+Release:	2
 License:	GPL
 Vendor:		Bill Wilson <bill@gkrellm.net>
 Group:		X11/Applications
