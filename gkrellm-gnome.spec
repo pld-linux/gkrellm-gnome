@@ -1,5 +1,5 @@
 Summary:	GKrellM plugin to use GNOME
-Summary(pl):	Plugin gkrellm do uøywania z GNOME
+Summary(pl.UTF-8):   Plugin gkrellm do u≈ºywania z GNOME
 Name:		gkrellm-gnome
 Version:	0.1
 Release:	3
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A GKrellM plugin to add GNOME capabilities.
 
-%description -l pl
-Plugin GKrellM dodaj±cy moøliwo∂ci GNOME.
+%description -l pl.UTF-8
+Plugin GKrellM dodajƒÖcy mo≈ºliwo≈õci GNOME.
 
 %prep
 %setup -q -n %{name}
