@@ -1,5 +1,5 @@
 Summary:	GKrellM plugin to use GNOME
-Summary(pl.UTF-8):   Plugin gkrellm do używania z GNOME
+Summary(pl.UTF-8):	Plugin gkrellm do używania z GNOME
 Name:		gkrellm-gnome
 Version:	0.1
 Release:	3
